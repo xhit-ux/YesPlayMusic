@@ -375,6 +375,56 @@ module.exports = [
     module: require('@neteaseapireborn/api/module/logout'),
   },
   {
+    identifier: 'msg_private',
+    route: '/msg/private',
+    module: require('@neteaseapireborn/api/module/msg_private'),
+  },
+  {
+    identifier: 'msg_private_history',
+    route: '/msg/private/history',
+    module: require('@neteaseapireborn/api/module/msg_private_history'),
+  },
+  {
+    identifier: 'msg_comments',
+    route: '/msg/comments',
+    module: require('@neteaseapireborn/api/module/msg_comments'),
+  },
+  {
+    identifier: 'msg_forwards',
+    route: '/msg/forwards',
+    module: require('@neteaseapireborn/api/module/msg_forwards'),
+  },
+  {
+    identifier: 'msg_notices',
+    route: '/msg/notices',
+    module: require('@neteaseapireborn/api/module/msg_notices'),
+  },
+  {
+    identifier: 'msg_recentcontact',
+    route: '/msg/recentcontact',
+    module: require('@neteaseapireborn/api/module/msg_recentcontact'),
+  },
+  {
+    identifier: 'send_text',
+    route: '/send/text',
+    module: require('@neteaseapireborn/api/module/send_text'),
+  },
+  {
+    identifier: 'send_song',
+    route: '/send/song',
+    module: require('@neteaseapireborn/api/module/send_song'),
+  },
+  {
+    identifier: 'send_playlist',
+    route: '/send/playlist',
+    module: require('@neteaseapireborn/api/module/send_playlist'),
+  },
+  {
+    identifier: 'send_album',
+    route: '/send/album',
+    module: require('@neteaseapireborn/api/module/send_album'),
+  },
+  {
     identifier: 'login_status',
     route: '/login/status',
     module: require('@neteaseapireborn/api/module/login_status'),
