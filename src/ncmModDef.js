@@ -375,14 +375,19 @@ module.exports = [
     module: require('@neteaseapireborn/api/module/logout'),
   },
   {
-    identifier: 'msg_private',
-    route: '/msg/private',
-    module: require('@neteaseapireborn/api/module/msg_private'),
+    identifier: 'msg_recentcontact',
+    route: '/msg/recentcontact',
+    module: require('@neteaseapireborn/api/module/msg_recentcontact'),
   },
   {
     identifier: 'msg_private_history',
     route: '/msg/private/history',
     module: require('@neteaseapireborn/api/module/msg_private_history'),
+  },
+  {
+    identifier: 'msg_private',
+    route: '/msg/private',
+    module: require('@neteaseapireborn/api/module/msg_private'),
   },
   {
     identifier: 'msg_comments',
@@ -398,11 +403,6 @@ module.exports = [
     identifier: 'msg_notices',
     route: '/msg/notices',
     module: require('@neteaseapireborn/api/module/msg_notices'),
-  },
-  {
-    identifier: 'msg_recentcontact',
-    route: '/msg/recentcontact',
-    module: require('@neteaseapireborn/api/module/msg_recentcontact'),
   },
   {
     identifier: 'send_text',

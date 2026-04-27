@@ -23,14 +23,18 @@ const service = axios.create({
 service.interceptors.request.use(function (config) {
   if (!config.params) config.params = {};
   if (baseURL.length) {
-    if (baseURL[0] !== '/' && getCookie('MUSIC_U') !== null) {
+    if (
+      baseURL[0] !== '/' &&
+      !process.env.IS_ELECTRON &&
+      getCookie('MUSIC_U') !== null
+    ) {
       config.params.cookie = `MUSIC_U=${getCookie('MUSIC_U')};`;
     }
   } else {
     console.error("You must set up the baseURL in the service's config");
   }
 
-  if (!config.url.includes('/login')) {
+  if (!process.env.IS_ELECTRON && !config.url.includes('/login')) {
     config.params.realIP = '211.161.244.70';
   }
 
